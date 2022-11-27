@@ -2,16 +2,18 @@
 description: A wallet for the rest of us
 ---
 
-# 🐪 Candide Beta
+# 🐪 Candide Docs
 
-![](.gitbook/assets/candide\_wallpaper.png)
+![](.gitbook/assets/1500x500.jpeg)
 
-This documents server as reference for those interested in how Candide Beta functions under the hood. If you are looking for guides on how to use the wallet, we will be publishing them soon.
+## About CANDIDE
 
-### About
+CANDIDE is a collective of contributors building collaboratively in the open a wallet as a public good. There is not single entity or corporation controlling its development. Learn more on how to [contribute](broken-reference)
 
-Candide Beta is a self-custodial mobile wallet based on [ERC-4337](https://eips.ethereum.org/EIPS/eip-4337). Candide Beta is first be deployed on Goerli testnet on, available on both Android and IOS. Then Candide aims to deploy on [Optimism](https://optimism.io/).
+## About CANDIDE Wallet
+
+Candide Wallet Beta is a self-custodial mobile smart contract wallet. It is currently deployed on Goerli testnet. It is now available on both Android Test and IOS Testflight. Candide is working on deploying on [Optimism](https://optimism.io/) for its . Get an overview on the [Beta](beta-overview/overview/).
 
 ### Resources&#x20;
 
-If you have any questions or want to be part of our community, please check out our [Find Us](find-us.md)
+If you have any questions or want to be part of our community, please check out our [Find Us](beta-overview/find-us.md)

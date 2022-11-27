@@ -13,7 +13,7 @@ Almost every wallet on Ethereum today have certain limitation in one way or the 
 
 ### Introducing Candide Beta
 
-![](../.gitbook/assets/logo.png)
+![](../../.gitbook/assets/logo.png)
 
 Candide Beta is a contract based wallet on Ethereum. It is build on top on ERC-4337 as a standard interface for the global contracts named [Entry Point](https://github.com/eth-infinitism/account-abstraction/blob/main/contracts/EntryPoint.sol). These set of contracts alleviate much of the heavy lift security burden to ensure safety is done not in the wallet itself, but in the entry point contracts.&#x20;
 

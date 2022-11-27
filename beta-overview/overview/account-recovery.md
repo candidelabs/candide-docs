@@ -1,6 +1,7 @@
 ---
 description: Social Recovery Through Guardians
-cover: ../.gitbook/assets/guardians_of_the_galaxy_by_meomoc-d7ucvts-2165270492.jpeg
+cover: >-
+  ../../.gitbook/assets/guardians_of_the_galaxy_by_meomoc-d7ucvts-2165270492.jpeg
 coverY: 0
 ---
 
