@@ -17,3 +17,8 @@
 
 * [🧑🍳 How to Contribute](contribute/how-to-contribute/README.md)
   * [✍ Writing Style](contribute/how-to-contribute/writing-style.md)
+
+## Guides
+
+* [How to add a Guardian?](guides/how-to-add-a-guardian.md)
+* [How to recover an account?](guides/how-to-recover-an-account.md)
