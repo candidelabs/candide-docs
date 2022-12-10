@@ -14,8 +14,6 @@ Contract based accounts who implement batched transactions can do so in a way th
 
 Candide demonstrates batched transactions by integrating with Uniswap inside its application. Users are able to swap ERC-20 tokens in a single tap, without the need to call both `approve` and `transferFrom` in two separate transactions.&#x20;
 
-### Future Work
-
 #### Atomic Transactions
 
-In its current form, batched transactions are not atomic. Take our previous example: If `transferFrom` failed, while `approve` is succeeded, the approval does not revert. Atomic transacitons allows to revert userOpeartions if a single one of them failed. That doesn't leave any open ERC-20 approval on contract interactions and a safer dapp experience.&#x20;
+Candide supports atomic batched transactions by default. Take our previous example: If `transferFrom` failed, while `approve` is succeeded, the approval reverts. That doesn't leave any open ERC-20 approval on contract interactions and a safer dapp experience.&#x20;

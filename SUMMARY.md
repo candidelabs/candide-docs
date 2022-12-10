@@ -22,3 +22,7 @@
 
 * [How to add a Guardian?](guides/how-to-add-a-guardian.md)
 * [How to recover an account?](guides/how-to-recover-an-account.md)
+
+## Dapp Developers
+
+* [Batched transactions](dapp-developers/batched-transactions.md)
