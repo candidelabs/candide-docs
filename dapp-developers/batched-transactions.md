@@ -1,16 +1,14 @@
 ---
 description: >-
-  Batched transactions allows you to to perform multiple transactions in one
-  single on-chain transaction.
+  Batched transactions allows you to perform multiple transactions in one single
+  on-chain transaction
 ---
 
 # Batched transactions
 
-You can send an array of transactions and they will all get processed in 1 single transaction. Candide batched transactions are also atomic; meaning that all transactions in the batch must succeed, otherwise if any of the batched transactions fails then they are all cancelled. \
+You can send an array of transactions and they will all get processed in 1 single transaction. Candide batched transactions are atomic; meaning that all transactions in the batch must succeed, otherwise if any of the batched transactions fails then they are all cancelled. \
 \
-[EIP-5792](https://github.com/ethereum/EIPs/pull/5792/files) allows us to standarise JSON-RPC methods for dapps to communicate bundle calls to wallet using:
-
-&#x20;`wallet_sendFunctionCallBundle`,`wallet_getBundleStatus`&#x20;
+[EIP-5792](https://github.com/ethereum/EIPs/pull/5792/files) allows us to standarise JSON-RPC methods for dapps to communicate bundle calls between wallets using `wallet_sendFunctionCallBundle` and `wallet_getBundleStatus`
 
 ## Using EthersJS Library
 
@@ -69,13 +67,14 @@ const txs = [
     ]
   }
 ]
+
+// send transaction
+const { transactionHash } = await signer.send("wallet_sendFunctionCallBundle", txs);
 ```
 
 ### Get Transaction Status
 
 ```javascript
-const { transactionHash } = await signer.send("wallet_sendFunctionCallBundle", txs);
-
 // get the status of the bundle call 
 const status = await signer.send("wallet_getBundleStatus", [transactionHash]);
 
