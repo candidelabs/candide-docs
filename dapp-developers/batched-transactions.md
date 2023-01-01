@@ -8,7 +8,7 @@ description: >-
 
 You can send an array of transactions and they will all get processed in 1 single transaction. Candide batched transactions are atomic; meaning that all transactions in the batch must succeed, otherwise if any of the batched transactions fails then they are all cancelled. \
 \
-[EIP-5792](https://github.com/ethereum/EIPs/pull/5792/files) allows us to standarise JSON-RPC methods for dapps to communicate bundle calls to wallets using `wallet_sendFunctionCallBundle` and `wallet_getBundleStatus`
+[EIP-5792](https://github.com/ethereum/EIPs/pull/5792/files) allows us to standarise JSON-RPC methods for dapps to communicate bundle calls to wallets using `wallet_sendFunctionCallBundle` , `wallet_getBundleStatus` and `wallet_showBundleStatus`
 
 You will need to download CANDIDE wallet to test your dapp. Get access from the [#dev channel in discord](https://discord.gg/NM5HakA9nC) by pinging a core contributor.
 
@@ -119,6 +119,32 @@ if (status) {
 }
 ```
 
+### Show Bundle Status
+
+```javascript
+// delegate showing bundle status to the wallet
+
+const status = await library.provider.request({
+  method: "wallet_showBundleStatus",
+  params: [txHash]
+});
+
+console.log(status);
+/* 
+{
+  status: "CONFIRMED"
+  receipt: {
+    logs: [..]
+    success: true
+    blockHash: "0x84b9f48e922c6b500fa07a1e94144cb1452f2466199fc726e807d31bae6b4e52"
+    blockNumber: "0x7dbc3c"
+    gasUsed: "0x25c8e"
+    transactionHash: "0xcb8c43372800586bffc7521e0ca09f8828a87d4f0003f36ea68f9cbcf3e229f9"
+  }
+}
+*/
+```
+
 ## WalletConnect Standalone
 
 ### Send Bundle Calls
@@ -213,3 +239,32 @@ const status = await connector.sendCustomRequest({
 */
 ```
 
+### Show Bundle Status
+
+```javascript
+// Delegate showing the bundle status to the wallet
+
+const status = await connector.sendCustomRequest({
+  id: 1671118055013479,
+  jsonrpc: "2.0",
+  method: "wallet_showBundleStatus",
+  params: [txHash],
+});
+
+console.log(status);
+/* 
+{
+  status: "CONFIRMED"
+  receipt: {
+    logs: [..]
+    success: true
+    blockHash: "0x84b9f48e922c6b500fa07a1e94144cb1452f2466199fc726e807d31bae6b4e52"
+    blockNumber: "0x7dbc3c"
+    gasUsed: "0x25c8e"
+    transactionHash: "0xcb8c43372800586bffc7521e0ca09f8828a87d4f0003f36ea68f9cbcf3e229f9"
+  }
+}
+*/
+```
+
+&#x20;
