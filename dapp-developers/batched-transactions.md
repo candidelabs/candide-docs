@@ -10,41 +10,25 @@ You can send an array of transactions and they will all get processed in 1 singl
 \
 [EIP-5792](https://github.com/ethereum/EIPs/pull/5792/files) allows us to standarise JSON-RPC methods for dapps to communicate bundle calls between wallets using `wallet_sendFunctionCallBundle` and `wallet_getBundleStatus`
 
-## Using EthersJS Library
+## WalletConnect Standalone
 
 ### Send Transaction Batch
 
-Example of how to send a transaction batch (2 ETH transfers) using ethersJS and walletconnect
+Example of how to send a transaction batch (2 ETH transfers) using walletconnect standalone client
 
 ```javascript
 import { ethers } from "ethers";
-import Web3Modal from 'web3modal';
-import WalletConnectProvider from '@walletconnect/web3-provider';
+import WalletConnect from "@walletconnect/client";
+import QRCodeModal from "@walletconnect/qrcode-modal";
+
+// set provider
+const provider = new ethers.providers.JsonRpcProvider("https://goerli.infura.io/v3/$API_KEY");
 
 // connect with walletconnect
-async function getWeb3Modal() {
-  const web3Modal = new Web3Modal({
-    network: 'goerli',
-    cacheProvider: false,
-    providerOptions: {
-      walletconnect: {
-        package: WalletConnectProvider,
-        options: {
-          infuraId: process.env.NEXT_PUBLIC_INFURA_ID,
-        },
-      },
-    },
-  });
-  return web3Modal;
-}
-const web3Modal = await getWeb3Modal();
-const connection = await web3Modal.connect();
 
-// set the provider
-const provider = new ethers.providers.Web3Provider(connection);
-
-// get the signer
-const signer = provider.getSigner();
+// define connector, create a new session and connect to the right chain ID
+const connector = new WalletConnect({ bridge, qrcodeModal: QRCodeModal });
+//.. 
 
 // define your transaction
 const txs = [
@@ -69,14 +53,24 @@ const txs = [
 ]
 
 // send transaction
-const { transactionHash } = await signer.send("wallet_sendFunctionCallBundle", txs);
+const transactionHash = await connector.sendCustomRequest({
+  id: 1671118055013479,
+  jsonrpc: "2.0",
+  method: "wallet_sendFunctionCallBundle",
+  params: txs,
+});
 ```
 
 ### Get Transaction Status
 
 ```javascript
 // get the status of the bundle call 
-const status = await signer.send("wallet_getBundleStatus", [transactionHash]);
+const status = await connector.sendCustomRequest({
+  id: 1671118055013479,
+  jsonrpc: "2.0",
+  method: "wallet_getBundleStatus",
+  params: [transactionHash]
+});
 
 // example of status reponse
 /* 
