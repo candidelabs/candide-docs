@@ -10,6 +10,8 @@ You can send an array of transactions and they will all get processed in 1 singl
 \
 [EIP-5792](https://github.com/ethereum/EIPs/pull/5792/files) allows us to standarise JSON-RPC methods for dapps to communicate bundle calls to wallets using `wallet_sendFunctionCallBundle` and `wallet_getBundleStatus`
 
+You will need to download CANDIDE wallet to test your dapp. Get access from the [#dev channel in discord](https://discord.gg/NM5HakA9nC) by pinging a core contributor.
+
 ## Web3Modal
 
 #### Try it in this <mark style="color:blue;"></mark> [<mark style="color:blue;">sandbox</mark>](https://codesandbox.io/s/bundled-calls-web3modal-527p9h?file=/src/App.js:1767-1816)<mark style="color:blue;"></mark>
