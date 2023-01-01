@@ -25,4 +25,4 @@
 
 ## Dapp Developers
 
-* [Batched transactions](dapp-developers/batched-transactions.md)
+* [➕ Batched transactions](dapp-developers/batched-transactions.md)
