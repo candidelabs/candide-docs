@@ -1,5 +1,7 @@
 # CANDIDE Wallet Documentation Website
 
+![Alt text](./static/img/1500x500.jpeg "CANDIDE LOGO")
+
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ### Installation
