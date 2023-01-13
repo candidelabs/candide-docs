@@ -1,0 +1,37 @@
+
+import ChainTable from '/src/components/ChainTable'
+const chainList = [
+  {
+    network: 'Optimism',
+    logo: '/img/networks/10.png',
+    chainId: 10,
+    chainHandle: 'optimism',
+  },
+]
+const testChainList = [
+  {
+    network: 'Optimistic Goerli',
+    logo: '/img/networks/10.png',
+    chainId: 420,
+    chainHandle: 'optimistic-goerli',
+  },
+  {
+    network: 'Goerli',
+    logo: '/img/networks/1.png',
+    chainId: 5,
+    chainHandle: 'goerli',
+  },
+]
+
+# Supported Networks
+
+The following networks are currently supported by CANDIDE mobile wallet, CANDIDE Bundler,
+CANDIDE Paymaster:
+
+## Networks
+
+<ChainTable items={chainList} />
+
+## Testnets
+
+<ChainTable items={testChainList} />

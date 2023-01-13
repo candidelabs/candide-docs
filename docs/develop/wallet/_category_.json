@@ -1,0 +1,9 @@
+{
+    "label": "Wallet",
+    "position": 1,
+    "link": {
+      "type": "generated-index",
+      "description": "CANDIDE Wallet gives you a friendly, non-custodial wallet for your users with Optimism support and seamless integration."
+    }
+  }
+  
