@@ -25,6 +25,7 @@ const sidebars = {
         'develop/wallet/connect-wallet',
         'develop/wallet/batch-transactions',
         'develop/wallet/network-support',
+        'develop/wallet/gas-sponsorship',
         'develop/wallet/gasless-transactions',
         'develop/wallet/session-keys'
       ],
