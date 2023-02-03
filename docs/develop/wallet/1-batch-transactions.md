@@ -7,7 +7,7 @@ Batched transactions allow you to perform multiple transactions in one single on
 
 You can send an array of transactions and they will all get processed in 1 single transaction. Candide batched transactions are atomic; meaning that all transactions in the batch must succeed, otherwise, if any of the batched transactions fails then they are all canceled.
 
-[EIP-5792](https://github.com/ethereum/EIPs/pull/5792/files) allows us to standardize JSON-RPC methods for dapps to communicate bundle calls to wallets using:
+[EIP-5792](https://eips.ethereum.org/EIPS/eip-5792) allows us to standardize JSON-RPC methods for Dapps to communicate bundle calls to wallets using:
 -  `wallet_sendFunctionCallBundle` 
 -  `wallet_getBundleStatus`
 -  `wallet_showBundleStatus`
