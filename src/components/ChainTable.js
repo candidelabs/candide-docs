@@ -6,7 +6,8 @@ export default function ChainTable({ items }) {
         <Table
             items={items}
             leftHeading="Network"
-            rightHeading="Chain ID"
+            rightHeading="Gas Faucet"
+            centerHeading="Chain ID"
             renderLeftItem={item => (
                 <div style={{
                     display: "flex",
@@ -21,7 +22,8 @@ export default function ChainTable({ items }) {
                     <span>{item.network}</span>
                 </div>
             )}
-            renderRightItem={item => <span>{item.chainId}</span>}
+            renderRightItem={item => <span>{item.faucet}</span>}
+            renterCenterItem={item => <span>{item.chainId}</span>}
         />
     )
 }

@@ -11,7 +11,7 @@ Sponsorship can be customized to allow for only certain methods, minimum deposit
 Currently, the Paymaster feature is by permission only. The CANDIDE team reviews the Protocol's contracts and model to come up with a Sybil-resistant mechanism. The mechanism is shared with the protocol and is made public. In the future, it will be possible for Dapp developers to sponsor the transaction fees of their users in a non-custodial way. You can contact us on discord if you would like to partner with us and use this feature.
 
 ## Currently Supported
-Users can pay their gas fees with the following currencies:
+Users on Optimism can pay their gas fees with the following currencies:
 - ETH
 - USDC
 
@@ -22,3 +22,7 @@ Users are shown a fixed fee at the time of transaction confirmation, which is us
   alt="Example banner"
   width="29%"
 />
+
+:::tip
+From the developer Settings in the mobile app, you can request CANDIDE Test Token to experiment with paying gas with ERC-20s on Testnets
+:::

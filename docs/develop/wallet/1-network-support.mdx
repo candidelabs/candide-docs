@@ -6,6 +6,7 @@ const chainList = [
     logo: '/img/networks/10.png',
     chainId: 10,
     chainHandle: 'optimism',
+    faucet: 'None'
   },
 ]
 const testChainList = [
@@ -14,12 +15,14 @@ const testChainList = [
     logo: '/img/networks/10.png',
     chainId: 420,
     chainHandle: 'optimistic-goerli',
+    faucet: 'CTT - ERC-20'
   },
   {
     network: 'Goerli',
     logo: '/img/networks/1.png',
     chainId: 5,
     chainHandle: 'goerli',
+    faucet: 'CTT - ERC-20',
   },
 ]
 
@@ -35,3 +38,9 @@ CANDIDE Paymaster:
 ## Testnets
 
 <ChainTable items={testChainList} />
+
+
+:::tip
+
+Request CANDIDE Test Tokens (CTT) from the developer settings in the mobile app. CTT are ERC-20s tokens that are accepted by the Paymaster service as transaction fees.
+::: 
