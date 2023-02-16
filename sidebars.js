@@ -40,6 +40,7 @@ const sidebars = {
       items: [
         'getting-started/about-candide/overview',
         'getting-started/about-candide/account-abstraction',
+        'getting-started/about-candide/account-recovery',
         'getting-started/about-candide/sponsored-transactions',
         'getting-started/about-candide/batched-transactions',
         'getting-started/about-candide/modules',
