@@ -18,18 +18,22 @@ _For example with CANDIDE,_ MetaMask, Coinbase Wallet, Ledger, etc..*
 1. Head to https://security.candidewallet.com
 2. Tap ‘Connect wallet’ and Choose your wallet 
 3. You will see one or several recovery requests. Sign the one that matches the emojis shown on your contact screen
-4. If the minimum threshold of recovery has been reached, tap Submit
+4. If the minimum threshold of recovery has been reached with your signature, you can submit it directly
+    - If you would like to only sign and let someone else submit the tx, you can untoggle the execute button
+5. Once the recovery process starts, a delay of 3 days is needed before the owner can regain access to his account
 
 ### Using Email Recovery
 
 1. Head to https://security.candidewallet.com
 2. Tap ‘Connect wallet’ and Choose **Magic Wallet** 
-3. Enter your email address and connect. You’ll receive a magic link to your email for authetification. You can verify the sender's email: noreply@trymagic.com
+3. Enter your email address and connect. You’ll receive a magic link to your email for authentification. You can verify the sender's email: noreply@trymagic.com
 4. Once you are connected, you will see one or several recovery requests. Sign the one that matches the emojis shown on your contact screen
-5. If the minimum threshold of recovery has been reached, tap Submit
+5. If the minimum threshold of recovery has been reached with your signature, you can submit it directly
+    - If you would like to only sign and let someone else submit the tx, you can untoggle the execute button
+6. Once the recovery process starts, a delay of 3 days is needed before the owner can regain access to his account
 
 :::tip Note
-The last approval by a recovery contact requires a network fee. CANDIDE does not profit from this transaction.
+To keep the last recovery contact private, ask them to only sign the transaction by untoggling the execute button. Use any other wallet to then submit the recovery transaction.
 :::
 When the waiting period is over, your contact will recover their account
 
