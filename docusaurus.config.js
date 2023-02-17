@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'CANDIDE Docs',
+  title: 'CANDIDE',
   tagline: 'Smart contract wallets are cool',
   url: 'https://docs.candidewallet.com',
   baseUrl: '/',

@@ -1,5 +1,5 @@
 # Modules
-The same implementation as [Safe](https://github.com/safe-global/safe-modules) Modules](https://github.com/safe-global/safe-modules)
+The same implementation as [Safe Modules](https://github.com/safe-global/safe-modules)
 
 Since CANDIDE is based on Gnosis Safe Contracts, it does have the same implementation as Safe for adding to a wallet.
 
