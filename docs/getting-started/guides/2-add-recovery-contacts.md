@@ -26,7 +26,7 @@ CANDIDE mobile app offers the possibility of adding a recovery contact with emai
 ### A hardware wallet
 You can use your hardware wallet to add yourself as a recovery contact to your account
 
-:::tip Privacy by Design
+:::tip Private by Design
 
 To protect your privacy, CANDIDE mobile app doesn't know who your recovery contacts are, so you need to remember them
 :::

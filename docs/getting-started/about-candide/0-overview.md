@@ -14,21 +14,21 @@ Almost every wallet on Ethereum today have certain limitation in one way or the 
 
 ## Introducing CANDIDE
 
-*CANDIDE* is a smart contract wallet on Ethereum
+*CANDIDE* is an EVM compatibale smart contract wallet
 
 ## CANDIDE Special Features
 #### No Seed Phrases | Contract-Based Recovery
 CANDIDE hides seed phrases thanks to a system called Social Recovery. Users can recover their lost wallet by simply calling their set recovery contacts. We detail our chosen design for account recovery here.
 
-### Bundled Transactions
+### Batched Transactions
 Candide allows transactions to execute a sequence of transactions, which helps bring user-friendly Dapps. The common case for many smart contract interactions is 2 transactions: Approve ERC-20 spend + Spend. Users can sign once to commit to both transactions that can be signed one after the other atomically. More on Bundled Transactions
 
 ### Gas Abstraction
 
 Candide allows users to pay network fees in ERC-20s with Paymasters. Upon signing up, users won't need to have ETH to deploy their smart contract-based wallet, and can simply deposit funds and transact without knowing the notion of gas payments in ETH. We detail our chosen paymaster design here.
 
-## A Technicality in a nutshell
+### ERC-4337
 
-Users confirm the signing of the transaction. CANDIDE mobile client packages the transactions in a UserOperation that contains the necessary information about the sender, and the transactions, along with signatures and other data for verification. 
+CANDIDE wallet leverages [ERC-4337](https://eips.ethereum.org/EIPS/eip-4337), the account abstraction proposal which completely avoids the need for consensus-layer protocol changes. Users confirm the signing of the transaction. CANDIDE mobile client packages the transactions in a UserOperation that contains the necessary information about the sender, and the transactions, along with signatures and other data for verification. 
 
-Candide extends the entry point logic to support paymasters that sponsor transactions for their users. Bundlers then package up a set of UserOperation objects into a single “bundle transaction”, then call handles on pre-published global entry point contracts. Users' transactions then get included in an Ethereum block. 
+Candide extends the `EntryPoint` logic to support `paymasters` that sponsor transactions for their users. `Bundlers` then package up a set of `UserOperation` objects into a single “bundle transaction”, then call handles on pre-published global entry point contracts. Users' transactions then get included in an Ethereum block.
