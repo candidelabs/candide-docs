@@ -56,6 +56,16 @@ const sidebars = {
         'getting-started/guides/help-recover-an-account',
       ],
     },
+  ],
+  securitySideBar: [
+    'security/security-home',
+    {
+      type: 'category',
+      label: 'Deployments',
+      items: [
+        'security/deployment/testnet',
+      ],
+    },
   ]
 };
 
