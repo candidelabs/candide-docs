@@ -84,6 +84,11 @@ const config = {
             position: 'left',
             label: 'Develop',
           },
+          {
+            to: 'security/security-home',
+            position: 'left',
+            label: 'Security',
+          },
         ],
       },
       footer: {
