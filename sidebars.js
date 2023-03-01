@@ -20,7 +20,7 @@ const sidebars = {
     'develop/getting-started',
     {
       type: 'category',
-      label: 'Wallet',
+      label: 'Integrate Wallet',
       items: [
         'develop/wallet/connect-wallet',
         'develop/wallet/network-support',

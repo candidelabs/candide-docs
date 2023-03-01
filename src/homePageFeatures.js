@@ -13,8 +13,8 @@ export default [
       title: 'Build',
       rows: [
         {
-          title: 'Integrate',
-          description: 'Get started improving your dapp experience with Account Abstraction',
+          title: 'Develop Dapps',
+          description: 'Get started improving your dapp experience with Account Abstraction features and Gas Sponsorship',
           to: './develop/getting-started',
         },
       ],
