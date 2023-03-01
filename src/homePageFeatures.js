@@ -17,6 +17,11 @@ export default [
           description: 'Get started improving your dapp experience with Account Abstraction features and Gas Sponsorship',
           to: './develop/getting-started',
         },
+        {
+          title: 'Bundler EIP-4337',
+          description: 'Get started running Voltaire, an EIP-4337 Compliant Bundler to send UserOperations',
+          to: './bundler/intro',
+        },
       ],
     }
   ]

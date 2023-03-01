@@ -77,16 +77,21 @@ const config = {
           {
             to: 'getting-started/intro',
             position: 'left',
-            label: 'Getting Started',
+            label: 'Wallet Guides',
           },
           {
             to: 'develop/getting-started',
             position: 'left',
-            label: 'Develop',
+            label: 'Develop Dapps',
+          },
+          {
+            to: 'bundler/intro',
+            position: 'left',
+            label: 'Voltaire Bundler',
           },
           {
             to: 'security/security-home',
-            position: 'left',
+            position: 'right',
             label: 'Security',
           },
         ],
@@ -105,7 +110,11 @@ const config = {
                 "href": "https://github.com/candidelabs/CandideWalletContracts"
               },
               {
-                "label": "Bundler and Paymaster",
+                "label": "Voltaire Bundler",
+                "href": "https://github.com/candidelabs/voltaire"
+              },
+              {
+                "label": "Simple Bundler and Paymaster RPC",
                 "href": "https://github.com/candidelabs/Candide-bundler-and-paymaster-RPC"
               },
               {

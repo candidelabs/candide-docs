@@ -67,6 +67,10 @@ const sidebars = {
         'security/deployment/testnet',
       ],
     },
+  ],
+  bundlerSideBar: [
+    'bundler/intro',
+    'bundler/install',
   ]
 };
 
