@@ -23,7 +23,7 @@ Account recovery is a process designed to get you back into account when you no 
    2.  The emojis set displayed on your phone
    3. Your public address of the account you want to recover
 
-You can follow next how the process will look like for your recovery contact. If you used email or added yourself as a recovery contact, this guide is also for you.
+You can follow next how the process will look like for your recovery contact. If you added yourself as a recovery contact, this guide is also for you.
 
 
 ## Check the status of your request

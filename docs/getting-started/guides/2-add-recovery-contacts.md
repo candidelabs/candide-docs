@@ -14,21 +14,25 @@ Setting up a recovery contact is required, as it makes regaining access to your 
 
 ## Who can be your recovery contact?
 
-Anyone with an Ethereum Address can be a recovery contact. CANDIDE recommends adding at least 3 recovery contacts from different backgrounds to secure an account from loss.
+Anyone with an Ethereum Wallet on the same network as your account can be a recovery contact. CANDIDE recommends adding at least 3 recovery contacts from different backgrounds to secure an account from loss.
+
+:::warning Same Network
+Verify that your recovery contract wallet have access to Optimism. 
+
+For example: Do not add Argent Wallet as a recovery contact for your CANDIDE Account because Argent is not available on Optimism.  
+:::
+
 
 ### Family and Friends
 Your recovery contact should be a person that you know and trust, like a family member or a close friend. You can choose any of your contacts with an Ethereum wallet.
-
-### Email
-
-CANDIDE mobile app offers the possibility of adding a recovery contact with email through Magic Labs. Magic Labs offers a custodial wallet service. They verify their user identity through email authentification. 
 
 ### A hardware wallet
 You can use your hardware wallet to add yourself as a recovery contact to your account
 
 :::tip Private by Design
+Keep your recovery contacts private. Add fresh addresses with no transaction history when adding a recovery contact.
 
-To protect your privacy, CANDIDE mobile app doesn't know who your recovery contacts are, so you need to remember them
+To protect your privacy, CANDIDE mobile app doesn't know who your recovery contacts are, so you need to remember them.
 :::
 
 ## How to set up an account Recovery Contact
@@ -36,7 +40,7 @@ To protect your privacy, CANDIDE mobile app doesn't know who your recovery conta
 1. Go to the Security Tab, then tap *Add a Guardian*
 2. Select the type of Guardian you want to add
    - Family and Friends: add their address and an optional nickname that is stored privately on your phone
-   - Email Recovery: add your email, and verify the magic link sent to your email
+   - Hardware Wallet: add your hardware wallet with an optional nickname to it
 3. Confirm the transaction
 
 ## How to recover your Account
