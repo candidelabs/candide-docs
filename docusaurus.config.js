@@ -89,6 +89,12 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: false,
       },
+      metadata: [{
+        name:
+          'twitter:card',
+        content:
+          'summary_large_image'
+      }],
       navbar: {
         title: 'CANDIDE',
         logo: {
