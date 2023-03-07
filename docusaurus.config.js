@@ -71,6 +71,8 @@ const config = {
         routeBasePath: 'blog',
         showReadingTime: true,
         postsPerPage: 3,
+        blogTitle: 'Engineering Blog',
+        blogDescription: 'CANDIDE Engineering Blog',
         /**
          * Path to data on filesystem relative to site dir.
          */

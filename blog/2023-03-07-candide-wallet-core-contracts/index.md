@@ -7,7 +7,7 @@ tags: [wallet]
 
 ![candide-contracts-4337](./candide_erc4337_poster.png)
 
-CANDIDE Wallet released its second version of its core contract on testnet, addressing key issues from its previous version. The new contract is simple and doesn't require complex fallbacks or delegate calls like the previous one. Only four methods are written, allowing it to be easily read and understood.
+CANDIDE Wallet released its second version of its core contract on testnet, addressing key issues from its previous version. The new contract is simple and doesn't require complex fallbacks or delegate calls like the previous one. Only four methods are added to Safe Contracts, allowing it to be ERC-4337 compatible.
 
 CANDIDE Wallet is an [EIP-4337](https://eips.ethereum.org/EIPS/eip-4337) smart contract wallet. This ERC is a specification to add account abstraction functionality to Ethereum and EVM-compatible chains without modifying the consensus rules.
 
@@ -47,7 +47,7 @@ Lastly, if a new EntryPoint is introduced, whether to add new functionality, imp
 ![replace-entrypoint](./replaceentrypoint.png)
 
 
-Those are essentially the four main methods used for CANDIDE Wallet contracts.
+Those are essentially the four main methods used for CANDIDE Wallet contracts. Find the [CandideWallet.sol](https://github.com/candidelabs/CandideWalletContracts/blob/main/contracts/candideWallet/CandideWallet.sol) on github.
 
 
 
