@@ -57,6 +57,26 @@ const config = {
         },
       };
     },
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        /**
+         * Required for any multi-instance plugin
+         */
+        id: 'blog',
+        /**
+         * URL route for the blog section of your site.
+         * *DO NOT* include a trailing slash.
+         */
+        routeBasePath: 'blog',
+        showReadingTime: true,
+        postsPerPage: 3,
+        /**
+         * Path to data on filesystem relative to site dir.
+         */
+        path: 'blog',
+      },
+    ],
   ],
 
   themeConfig:
@@ -88,6 +108,11 @@ const config = {
             to: 'bundler/intro',
             position: 'left',
             label: 'Voltaire Bundler',
+          },
+          {
+            to: '/blog',
+            position: 'right',
+            label: 'Blog',
           },
           {
             to: 'security/security-home',
