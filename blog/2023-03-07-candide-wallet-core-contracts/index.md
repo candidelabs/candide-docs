@@ -1,6 +1,8 @@
 ---
 slug: unbundling-candide-core-wallet-contract
-title: "Unbundling CANDIDE core wallet contract"
+title: Unbundling CANDIDE Core Wallet Contract
+description: How we leveraged Safe to build an ERC-4337 compatible Wallet
+image: "./candide_erc4337_poster.png"
 authors: [sherif]
 tags: [wallet]
 ---

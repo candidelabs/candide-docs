@@ -9,8 +9,8 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext()
   return (
     <Layout
-      title={`${siteConfig.title} Docs`}
-      description="CANDIDE wallet is a smart contract wallet that providers programmable accounts for end-users on Ethereum"
+      title={`${siteConfig.title} Docs for Developpers and Guides for using Wallet`}
+      description="CANDIDE wallet is a smart contract wallet based on EIP-4337 Account Abstraction that provides Smart Accounts for end-users on Optimism"
     >
       <main>
         <div className={styles.container}>
