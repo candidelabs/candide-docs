@@ -2,7 +2,7 @@
 slug: making-accounts-recoverable
 title: Making Ethereum Accounts Recoverable - The Seedless Way
 description: Introducing a new Account Recovery module with time delay for CANDIDE Wallet
-image: "./account-recovery-device-screens.png"
+image: "./twitter-friendly-poster.png"
 authors: [andrew]
 tags: [wallet]
 ---
