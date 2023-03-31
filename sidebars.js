@@ -71,6 +71,7 @@ const sidebars = {
   bundlerSideBar: [
     'bundler/intro',
     'bundler/install',
+    'bundler/rpc-methods',
   ]
 };
 
