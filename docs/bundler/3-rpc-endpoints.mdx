@@ -1,0 +1,62 @@
+---
+slug: rpc-endpoints
+title: Bundler RPC endpoints
+description: Hosted RPC endpoints
+authors: [sherif]
+---
+
+import { BundlerEndPointTable } from "/src/components/ChainTable";
+const chainList = [
+  {
+    network: "Ethereum",
+    logo: "/img/networks/1.png",
+    chainId: 1,
+    chainHandle: "ethereum",
+    address: "🔜",
+    provider: "",
+  },
+  {
+    network: "Optimism",
+    logo: "/img/networks/10.png",
+    chainId: 10,
+    chainHandle: "optimism",
+    address: "🔜",
+  },
+];
+const testChainList = [
+  {
+    network: "Sepolia",
+    logo: "/img/networks/1.png",
+    chainId: 11155111,
+    chainHandle: "sepolia",
+    address: "sepolia.voltaire.candidewallet.com:3000/rpc",
+    provider: "Candide Labs",
+  },
+  {
+    network: "Optimism Goerli",
+    logo: "/img/networks/10.png",
+    chainId: 420,
+    chainHandle: "goerli",
+    address: "🔜",
+    provider: "",
+  },
+  {
+    network: "Goerli",
+    logo: "/img/networks/1.png",
+    chainId: 5,
+    chainHandle: "goerli",
+    address: "🔜",
+    provider: "",
+  },
+];
+
+# Bundler RPC Endpoints
+
+Voltaire is provided as a free bundler instance for selected networks
+## Testnets
+
+<BundlerEndPointTable items={testChainList} />
+
+## Networks
+
+<BundlerEndPointTable items={chainList} />

@@ -5,9 +5,11 @@ export default function Table({
     leftHeading,
     centerHeading,
     rightHeading,
+    farRightHeading,
     renderLeftItem,
     renterCenterItem,
     renderRightItem,
+    renderFarRightItem,
 }) {
     return (
         <table>
@@ -15,6 +17,7 @@ export default function Table({
                 <th align="left">{leftHeading}</th>
                 <th align="left">{centerHeading}</th>
                 <th align="left">{rightHeading}</th>
+                {!farRightHeading? null: <th align="left">{farRightHeading}</th>}
             </thead>
             <tbody>
                 {items.map(function (item, index) {
@@ -23,6 +26,7 @@ export default function Table({
                             <td align="left">{renderLeftItem(item)}</td>
                             <td align="left">{renterCenterItem(item)}</td>
                             <td align="left">{renderRightItem(item)}</td>
+                            {!renderFarRightItem ? null : <td align="left">{renderFarRightItem(item)}</td>}
                         </tr>
                     )
                 })}

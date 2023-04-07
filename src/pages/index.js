@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title} Docs for Developpers and Guides for using Wallet`}
-      description="CANDIDE wallet is a smart contract wallet based on EIP-4337 Account Abstraction that provides Smart Accounts for end-users on Optimism"
+      description="Building open-source software for ERC-4337 Account Abstraction"
     >
       <main>
         <div className={styles.container}>

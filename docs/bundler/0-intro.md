@@ -1,11 +1,16 @@
 ---
 title: Intro
+description: A new modular, developer-friendly and lighting-fast Python Bundler for Ethereum EIP-4337 Account Abstraction
+image: "/img/erc4337-bundler.png"
 ---
 
 # Introduction
 Voltaire is a new modular, developer-friendly and lighting-fast Python Bundler for Ethereum EIP-4337 Account Abstraction. Voltaire is a fully open-source project designed to operate within the peer-to-peer mempool of UserOperations, facilitating the inclusion of transactions on-chain more quickly and efficiently.
 
 The code is available for free on [Github](https://candidelabs.com/voltaire) under a permissive license for anyone to use without any strings attached. We encourage the community to fork it, contribute with docs, issues, pull requests, questions, or even try to break it.
+<p align="center">
+  <img src="/img/erc4337-bundler.png" />
+</p>
 
 ## ERC-4337 Account Abstraction
 
@@ -35,6 +40,6 @@ The flow of UserOperation can be thought of as the following, from a Bundler per
 
 ## Votlaire 
 
-CANDIDE Labs aims to develop Voltaire into a fully compliant and production-grade bundler in Python. Our goal is to push the adoption of contract accounts forward on Ethereum and EVM networks with ERC-4337. 
+Voltaire presently has complete coverage of the test suite. While the specification is still under development, all upcoming updates will aim to sustain full compliance coverage.
 
 As open-source developers, we looked at every Ethereum client implementation and considered different architectures and languages. So we decided to build Voltaire from scratch with the following criteria: Performance, Modularity, Developer friendly Language and Open Licensing.

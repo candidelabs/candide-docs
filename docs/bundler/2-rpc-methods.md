@@ -30,7 +30,8 @@ Voltair Bundler exposes standard JSON-RPC API. The API is exposed on port `3000`
       maxPriorityFeePerGas,
       paymasterAndData,
       signature,
-    }
+    },
+    entrypointAddress,
   ]
 }
 ```
@@ -67,6 +68,7 @@ It returns the hash of the User Operation. In case of an error, it returns the e
       paymasterAndData,
       signature,
     },
+    entrypointAddress,
   ]
 }
 ```
@@ -95,7 +97,7 @@ It returns estimates for a UserOperation Gas parameters for `preVerificationGas`
   "jsonrpc": "2.0",
   "id": 0,
   "method": "eth_getUserOperationByHash",
-  "params": [userOpHash]
+  "params": [userOpHash, entrypointAddress]
 }
 ```
 
@@ -112,7 +114,7 @@ The method returns the full UserOperation object as well as the entrypoint addre
   "jsonrpc": "2.0",
   "id": 0,
   "method": "eth_getUserOperationReceipt",
-  "params": [userOpHash]
+  "params": [userOpHash, entrypointAddress]
 }
 ```
 
@@ -185,7 +187,9 @@ The method returns the full UserOperation object as well as the entrypoint addre
 
 ## debug namespace
 
-For developement purposes, the bundler exposes a set of debug methods. These methods are not meant to be used by client applications. 
+:::info
+Debug namespaces are for developement purposes. The bundler exposes a set of debug methods. These methods are not meant to be used by client applications.
+:::
 
 ### Send Bundle Now
 `debug_bundler_sendBundleNow` forces the bundler to execute the entire current mempool. Returns the transaction hash of the bundle submission.

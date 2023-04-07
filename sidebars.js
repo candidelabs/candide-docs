@@ -72,6 +72,7 @@ const sidebars = {
     'bundler/intro',
     'bundler/install',
     'bundler/rpc-methods',
+    'bundler/rpc-endpoints',
   ]
 };
 
