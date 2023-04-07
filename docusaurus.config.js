@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'CANDIDE',
-  tagline: 'Smart contract wallets are cool',
+  title: 'CANDIDE Labs',
+  tagline: 'Building open-source software for ERC-4337 Account Abstraction',
   url: 'https://docs.candidewallet.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
