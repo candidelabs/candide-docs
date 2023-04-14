@@ -35,7 +35,7 @@ export function BundlerEndPointTable({ items }) {
             leftHeading="Network"
             rightHeading="RPC address"
             centerHeading="Chain ID"
-            farRightHeading="Provider"
+            farRightHeading="Type"
             renderLeftItem={item => (
                 <div style={{
                     display: "flex",
@@ -52,7 +52,7 @@ export function BundlerEndPointTable({ items }) {
             )}
             renderRightItem={item => <span>{item.address}</span>}
             renterCenterItem={item => <span>{item.chainId}</span>}
-            renderFarRightItem={item => <span>{item.provider}</span>}
+            renderFarRightItem={item => <span>{item.type}</span>}
         />
     )
 }
