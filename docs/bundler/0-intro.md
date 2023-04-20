@@ -20,7 +20,7 @@ The role of centralized relayers here is replaced with a p2p network of new enti
 
 ## How Bundlers work
 
-A Bundler can be considered a block-builder, or at least an MEV searcher. As Account Abstraction gains adoption, an increasing part of user transactions would move into bundles. This means that most MEV opportunities will happen in bundles rather than blocks. Any block builder not partnering with a bundler (or becoming one) will be missing out on an increasing portion of the MEV. Bundlers will probably optimize for MEV and make the most of their profits over there.
+A Bundler running in a public mempool can be considered a block-builder, or an MEV searcher. As Account Abstraction gains adoption, an increasing part of user transactions would move into bundles. This means that most MEV opportunities will happen in bundles rather than blocks. Any block builder not partnering with a bundler (or becoming one) will be missing out on an increasing portion of the MEV. Bundlers will probably optimize for MEV and make the most of their profits over there.
 
 ### Bundlers role: 
 

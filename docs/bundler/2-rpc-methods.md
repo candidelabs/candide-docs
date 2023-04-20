@@ -3,7 +3,7 @@ title: RPC methods
 description: A reference to the supported RPC methods by Voltiare ERC-4337 Bundler.
 ---
 
-Voltair Bundler exposes standard JSON-RPC API. The API is exposed on port `3000` by default.
+Voltaire Bundler exposes standard JSON-RPC API
 
 ## eth_ namespace
 
