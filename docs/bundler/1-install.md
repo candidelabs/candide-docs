@@ -16,24 +16,27 @@ Looking for a quick bundler instance? Use one of our [public hosted endpoint](./
 The quickest way to get started is to use the docker image. Simply install [docker](https://docs.docker.com/engine/install) and run the following command to start a geth node and deploy the EntryPoint contract
 
 ```bash
-docker run --rm -ti sherifahmed990/voltaire-bundler:latest --entrypoint $ENTRYPOINT --bundler_secret $BUNDLER_SECRET --rpc_url $RPC_URL --geth_url $GETH_URL --chain_id $CHAIN_ID --verbose
+docker run --net=host --rm -ti sherifahmed990/voltaire-bundler:latest --entrypoint $ENTRYPOINT --bundler_secret $BUNDLER_SECRET --rpc_url $RPC_URL --rpc_port $PORT --ethereum_node_url $ETHEREUM_NODE_URL --chain_id $CHAIN_ID --verbose
 ```
 
-| Variable         |Comment                                     |
+| flags            |Comment                                     |
 | -----------------| -------------------------------------------|
-| `$ENTRYPOINT`    | Address of the [EntryPoint](../security/deployment/0-testnet.md) contract
-| `$BUNDLER_SECRET`| Private key of the bundler. Use any EOA's private key and make sure it's funded with some ETH                 
+| `--entrypoint`   | Address of the [$ENTRYPOINT](../security/deployment/0-testnet.md) contract address 
+|`--bundler_secret`| Private key of the bundler. Use any EOA's to be the `$BUNDLER_SECRET`   and make sure it's funded with some ETH                  
 | `$RPC_URL`       | URL of the rpc endpoint you will be hosting. Use `0.0.0.0` as default
-| `$GETH_URL`      | URL to an ethereum node. Use the URL of your own instance if you are running a full node [locally](#local-full-node), or a link to a full node endpoint from an [RPC provider](#rpc-provider).
-| `$CHAIN_ID`      | Chain ID of the network the bundler will operate in
+| `--ethereum_node_url`| Pass the `$ETHEREUM_NODE_URL` of your own instance if you are running a full node [locally](#local-full-node), or a link to a full node endpoint from an [RPC provider](#rpc-provider).
+| `--chain_id`     | `$CHAIN_ID` of the network the bundler will operate in
+| `--unsafe`       | In order to implement the full spec storage access rules and opcode banning, it must run against a go-ethereum node, which supports debug_traceCall with javascript "tracer" Specifically, `hardhat node` and `ganache` do NOT support this API. You can still run the bundler with such nodes, but with `--unsafe` so it would skip these security checks
+| `--verbose`      | To get verbose logs (optional)
+| `--rpc_port`     | `$PORT` number for the rpc (optional)
 
 This command will pull the latest docker image and will then start the bundler to listen for UserOperations. Once running, you can then send User Operation to the following if you used the default `$RPC_URL`: `0.0.0.0:3000/rpc`
 
 ### RPC Provider
-If you want to run voltaire locally and have a paid plan with an RPC provider for a full node, you can simple replace `$GETH_URL` with the link to the rpc endpoint
+If you want to run voltaire locally and have a paid plan with an RPC provider for a full node, you can simple replace `$ETHEREUM_NODE_URL` with the link to the rpc endpoint
 
 ### Local Full Node
-If you are running your own full node, simply replace `$GET_URL` with your own. If you want to run your own node, which comes with superpowers, follow the instruction below to run GETH [using docker](#start-geth). You can also run a different client implentation. We have tested Voltaire with [GETH](https://geth.ethereum.org/) and [Erigon](https://github.com/ledgerwatch/erigon).
+If you are running your own full node, simply replace `$ETHEREUM_NODE_URL` with your own. If you want to run your own node, which comes with superpowers, follow the instruction below to run GETH [using docker](#start-geth). You can also run a different client implentation. We have tested Voltaire with [go-ethereum](https://geth.ethereum.org/).
 
 ## Ubuntu
 ### Install Poetry
