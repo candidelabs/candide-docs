@@ -8,7 +8,7 @@
 
 Sponsorship can be customized to allow for only certain methods, minimum deposits or certain lock durations. In addition, users don't have to worry about gas limits or gas prices since the Paymaster automatically reprices transactions to ensure prompt execution.
 
-Currently, the Paymaster feature is by permission only. The CANDIDE team reviews the Protocol's contracts and model to come up with a Sybil-resistant mechanism. The mechanism is shared with the protocol and is made public. In the future, it will be possible for Dapp developers to sponsor the transaction fees of their users in a non-custodial way. You can contact us on discord if you would like to partner with us and use this feature.
+Currently, the Paymaster feature is by permission only. The CANDIDE team reviews the Protocol's contracts and model to come up with a Sybil-resistant mechanism. The mechanism is shared with the protocol and is made public. In the future, it will be possible for Dapp developers to sponsor the transaction fees of their users in a non-custodial way. You can contact us on [discord](https://discord.gg/NM5HakA9nC) or send an email to hello@candidewallet.com if you would like to partner with us and use this feature.
 
 ## Currently Supported
 Users on Optimism can pay their gas fees with the following currencies:
