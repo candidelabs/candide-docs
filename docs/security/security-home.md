@@ -2,8 +2,6 @@
 
 Information about CANDIDE's security processes, current configuration and disclosures.
 
-Note that CANDIDE is currently deployed only on testnet and is gearing up to deploy to optimism mainnet.  
-
 :::warning Warning
 CANDIDE Wallet is in alpha release and may experience technical issues or introduce breaking changes from time to time. By using CANDIDE wallet, you accept the following:
 
@@ -35,7 +33,7 @@ You can also reach out informally over discord to ping us without mentioning any
  
 - Safe contracts are user-upgradable. Once user deploys their contract account, they remain their only owner and can accept or deny any upgrades. CANDIDE uses Safe v.1.4.0.
 
-   - CANDIDE v.0.1 uses the unreleased [Safe v.1.4.0](https://github.com/safe-global/safe-contracts)
+   - CANDIDE v.0.1 uses [Safe v.1.4.0](https://github.com/safe-global/safe-contracts)
 
 - ERC-4337 Entrypoint contracts:
    - [ERC-4337](https://eips.ethereum.org/EIPS/eip-4337)

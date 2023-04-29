@@ -64,6 +64,7 @@ const sidebars = {
       type: 'category',
       label: 'Deployments',
       items: [
+        'security/deployment/mainnet',
         'security/deployment/testnet',
       ],
     },
