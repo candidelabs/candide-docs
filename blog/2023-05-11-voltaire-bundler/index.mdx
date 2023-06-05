@@ -9,14 +9,6 @@ tags: [bundler]
 import { BundlerEndPointTable } from "/src/components/ChainTable";
 const testChainList = [
   {
-    network: "Sepolia",
-    logo: "/img/networks/1.png",
-    chainId: 11155111,
-    chainHandle: "sepolia",
-    address: "https://sepolia.voltaire.candidewallet.com/rpc",
-    type: "Bundler",
-  },
-  {
     network: "Goerli",
     logo: "/img/networks/1.png",
     chainId: 5,
@@ -25,11 +17,35 @@ const testChainList = [
     type: "Bundler",
   },
   {
+    network: "Sepolia",
+    logo: "/img/networks/1.png",
+    chainId: 11155111,
+    chainHandle: "sepolia",
+    address: "https://sepolia.voltaire.candidewallet.com/rpc",
+    type: "Bundler",
+  },
+  {
     network: "Optimism Goerli",
     logo: "/img/networks/10.png",
     chainId: 420,
     chainHandle: "goerli",
     address: "https://optimism-goerli.voltaire.candidewallet.com/rpc",
+    type: "Bundler",
+  },
+  {
+    network: "Polygon PoS",
+    logo: "/img/networks/137.png",
+    chainId: 137,
+    chainHandle: "polygon",
+    address: "https://polygon.llamarpc.com",
+    type: "Node & Bundler",
+  },
+  {
+    network: "Polygon Mumbai",
+    logo: "/img/networks/137.png",
+    chainId: 80001,
+    chainHandle: "mumbai",
+    address: "https://mumbai.voltaire.candidewallet.com/rpc",
     type: "Bundler",
   },
 ];
