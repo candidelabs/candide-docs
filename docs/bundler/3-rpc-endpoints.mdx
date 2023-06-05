@@ -9,6 +9,14 @@ authors: [sherif]
 import { BundlerEndPointTable } from "/src/components/ChainTable";
 const chainList = [
   {
+    network: "Polygon PoS",
+    logo: "/img/networks/137.png",
+    chainId: 137,
+    chainHandle: "polygon",
+    address: "https://polygon.llamarpc.com",
+    type: "Node & Bundler",
+  },
+  {
     network: "Ethereum",
     logo: "/img/networks/1.png",
     chainId: 1,
@@ -50,11 +58,21 @@ const testChainList = [
     address: "https://optimism-goerli.voltaire.candidewallet.com/rpc",
     type: "Bundler",
   },
+  {
+    network: "Polygon Mumbai",
+    logo: "/img/networks/137.png",
+    chainId: 80001,
+    chainHandle: "mumbai",
+    address: "https://mumbai.voltaire.candidewallet.com/rpc",
+    type: "Bundler",
+  },
 ];
 
 # Bundler RPC Endpoints
 
-Voltaire is provided as a free bundler instance for selected networks
+Voltaire is provided as a free bundler instance on selected networks. 
+
+Looking for unlimited resources? Reach out on [discord](https://discord.gg/NM5HakA9nC), or by email at hello@candidewallet.com 
 ## Testnets
 
 <BundlerEndPointTable items={testChainList} />
